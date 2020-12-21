@@ -18,7 +18,7 @@ except ImportError:
     
 
 
-print("\n! Make sure to run this program as ROOT !\n")
+print("\n! Be sure that you are ROOT !\n")
 
 
 
@@ -28,7 +28,7 @@ try:
     subprocess.call(["ifconfig", net_iface, "promisc"], stdout = None, stderr = None, shell = False)
 
 except:
-    print("\nFailed to configure interface as promiscuous.\n")
+    print("\nFailed to configure interface as random.\n")
 
 else:
     
